@@ -20,7 +20,6 @@ export default function Seller() {
     async function awaitSeller() {
       if (getSellerLocal) {
         const response = await getSalesBySellerId(getSellerLocal.id);
-        console.log(response);
         setSalesByUserId(response);
       }
     }
